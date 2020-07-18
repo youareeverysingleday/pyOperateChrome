@@ -10,7 +10,13 @@
 |5|numpy|1.16.1|
 
 ## 操作步骤
-- VPS中可能碰到的问题及解决步骤：
+- 有两种方式运行。
+    1. python的各种IDE中直接运行pyOperateChrome文件。
+    2. 在windows环境中，使用批处理文件运行。Use bat file run the program, in windwos.
+
+## 注意事项
+- 要求lots_user_agent.csv或者ua.csv文件和pyOperateChrome.py在同一个文件夹中。
+- 在VPS是使用中可能碰到的问题及解决步骤：
     1. 运行python.exe。
         1. 安装完Python.exe之后，如果发现site-packages中没有Pip的存在。也就是说pip在python安装过程中没有安装成功，那么需要在命令行中输入python -m ensurepip --default-pip，来单独安装pip。
             - 可能的原因是VPS对对外访问的端口做出了限制，导致安装pip失败了。
@@ -24,6 +30,3 @@
     3. 目前所有的文件都需要放在d:\project目录下。
     4. 运行command.bat文件。
     5. 其他VPS中chrome的版本必须和当前VPS中chrome的版本一致。
-
-## 注意事项
-- 无。
